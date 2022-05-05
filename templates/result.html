@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<title>Crop Prediction</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style>
+body {
+   margin: 0px;
+   padding: 0px;
+   overflow: hidden;
+}
+
+.wrapper {
+    background-image:url('https://images.unsplash.com/photo-1586771107445-d3ca888129ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YWdyaWN1bHR1cmV8ZW58MHx8MHx8&w=1000&q=80');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center; 
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    -ms-content-zooming: none;
+    position:absolute;
+    width:100%;
+    height:100%;
+    overflow: scroll;
+}
+.container {
+  height: 100%;
+  position: absolute;
+  left: 20%;
+  right: 20% 
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 15px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  
+}
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+ 
+.transbox {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+    position: absolute;
+  width: 70%;
+  height: 100%;
+  z-index: 2;
+   text-align: center;
+}
+</style>
+</head>
+<body>
+  <div class="wrapper">
+  
+  <h3 style="font-family:Candara; text-align:center"></h3>
+  <div class="container">
+    <div class="transbox" >
+      <h1 style="color:white; font-family:Candara; text-align:center">Crop Prediction</h1>
+
+      <br><br><br><br><br><br><br><br><br>
+      <h3 style="font-family:Candara; color:white"> {{ output }}</h3>
+
+      </div>
+     </div>  
+  </div>
+  </div>
+  </body>
+  </html>
